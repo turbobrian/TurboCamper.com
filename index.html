@@ -45,12 +45,11 @@ body {
 .carousel {
   margin-bottom: 60px;
 }
-/* Since positioning the image, we need to help out the caption */
+
 .carousel-caption {
   z-index: 1;
 }
 
-/* Declare heights because of positioning of img element */
 .carousel .item {
   height: 400px;
   background-color:#555;
@@ -62,13 +61,11 @@ body {
   min-height: 400px;
 }
 
-/* Pad the edges of the mobile views a bit */
 .marketing {
   padding-left: 15px;
   padding-right: 15px;
 }
 
-/* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
   text-align: center;
   margin-bottom: 20px;
@@ -81,19 +78,17 @@ body {
   margin-right: 10px;
 }
 
-
 .featurette-divider {
-  margin: 30px 0; /* Space out the Bootstrap <hr> more */
+  margin: 30px 0;
 }
 .featurette {
-  padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
-  overflow: hidden; /* Vertically center images part 2: clear their floats. */
+  padding-top: 120px;
+  overflow: hidden;
 }
 .featurette-image {
-  margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+  margin-top: -120px;
 }
 
-/* Give some space on the sides of the floated elements so text doesn't run right into it. */
 .featurette-image.pull-left {
   margin-right: 40px;
 }
@@ -101,7 +96,6 @@ body {
   margin-left: 40px;
 }
 
-/* Thin out the marketing headings */
 .featurette-heading {
   font-size: 50px;
   font-weight: 300;
@@ -109,24 +103,19 @@ body {
   letter-spacing: -1px;
 }
 @media (min-width: 768px) {
-
-  /* Remve the edge padding needed for mobile */
   .marketing {
     padding-left: 0;
     padding-right: 0;
   }
 
-  /* Navbar positioning foo */
   .navbar-wrapper {
     margin-top: 20px;
-    margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    margin-bottom: -90px;
   }
-  /* The navbar becomes detached from the top, so we round the corners */
   .navbar-wrapper .navbar {
     border-radius: 4px;
   }
 
-  /* Bump up size of carousel content */
   .carousel-caption p {
     margin-bottom: 20px;
     font-size: 21px;
@@ -167,7 +156,6 @@ body {
       <img src="/img/line_drawing_side_0.jpg" style="width:100%" class="img-responsive">
       <div class="container">
         <div class="carousel-caption">
-          <!-- Button trigger modal -->
           <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
             See the work on the keel
           </button>
@@ -208,7 +196,6 @@ body {
     <img class="featurette-image pull-right" src="/img/sale.gif">
     <a name="sale"></a>
 
-
     <h2 class="featurette-heading">For Sale</h2>
     <p class="lead">
       Turbo Camper is for sale, make an offer. Contact: <a href="mailto:turbocamper@notanonymo.us">turbocamper@notanonymo.us</a>
@@ -221,7 +208,7 @@ body {
     <img class="featurette-image pull-left" src="/img/napali1-512.jpg">
     <h2 class="featurette-heading">Value<span class="text-muted"> </span></h2>
     <p class="lead">
-      Add a safety equipment, food, water and off you go sailing. The Hobie 33
+      Add safety equipment, food, water and off you go sailing. The Hobie 33
       is known for having the highest bang per buck of nearly any boat. Turbo Camper
       epitomizes this with a proven design on an impeccably prepared boat.
     </p>
@@ -273,7 +260,6 @@ body {
       <li>Marine VHF</li>
       <li>Masthead VHF antenna</li>
       <li>Emtrak B100 Class B AIS transciever (Dedicated GPS antenna and VHF whip antenna)</li>
-      <!-- <li>EPIRB 406MHz</li> -->
     </ul>
     <hr class="featurette-divider">
     <p class="lead">
@@ -296,8 +282,6 @@ body {
       <li>J2</li>
       <li>J3/blast reacher with RBS battens (Quantum)</li>
       <li>J4 (Pineapple)</li>
-      <!-- <li>Storm trysail</li>
-      <li>Storm jib</li> -->
       <li>Single luff twin-jib (Pineapple)</li>
       <li>5A spinnaker (Pineapple)</li>
       <li>2A spinnaker (Quantum)</li>
@@ -309,10 +293,7 @@ body {
     </p>
     <ul>
       <li>Excellent race bottom. Optimized for dry sailing</li>
-      <!-- <li>20lb. Fortress aluminium anchor with rode</li> -->
       <li>14lb. anchor with rode</li>
-      <!-- <li>22lb. bare anchor</li> -->
-      <!-- <li>Life sling</li> -->
       <li>2x pipe berths (canting anodized aluminium with mesh covers)</li>
       <li>2x mesh lee cloths</li>
       <li>Mesh cabinet covers</li>
@@ -335,7 +316,6 @@ body {
     </footer>
   </div>
 
-  <!-- Modal -->
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -344,7 +324,7 @@ body {
           <h4 class="modal-title" id="myModalLabel">Guide-coat keel sanding.</h4>
         </div>
         <div class="modal-body center-block">
-          <video src="/video/keelwork.m4v" preload="auto" controls>
+          <video src="/videos/keelwork.m4v" preload="auto" controls>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -354,19 +334,7 @@ body {
   </div>
 
 
-
     <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type='text/javascript' src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    <!--//
-    //
-    //
-    // <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular.min.js"></script>
-    //         <script type='text/javascript'>
-    //         $(document).ready(function() {
-    //         });
-    //
-    //         </script>
-    //  -->
-
         </body>
     </html>
